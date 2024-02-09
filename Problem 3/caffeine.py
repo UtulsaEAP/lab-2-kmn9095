@@ -1,12 +1,21 @@
 
 def caffeine():
     
-    caffeine_mg = float(input())
+    
     ''' Type your code here. '''
-    half_life1 = caffeine_mg/2
-    half_life2 = caffeine_mg/4
-    half_life3 = caffeine_mg/8
-    your_value = "After 6 hours: " + half_life1 + "mg", " After 12 hours: " + half_life2 + "mg", " After 24 hours:  " + half_life3 + "mg"
-    print(f'{your_value:.2f}')
+    import math
+    
+    initial_quantity = float(input())
+    caff_lvl6 = initial_quantity * (math.pow(0.5,1))
+    caff_lvl12 = initial_quantity * (math.pow(0.5,2))
+    caff_lvl24 = initial_quantity * (math.pow(0.5,4))
+
+    
+    print('After 6 hours:' + " " + f'{caff_lvl6:.2f}' +  " " +'mg')
+    print('After 12 hours:' + " " + f'{caff_lvl12:.2f}' + " " + 'mg')
+    print('After 18 hours:' + " " + f'{caff_lvl24:.2f}' + " " + 'mg')
+    
+    #your_value = x , y , z  
+    #print(f'{your_value:.2f}')
 if __name__ == "__main__":
     caffeine()
