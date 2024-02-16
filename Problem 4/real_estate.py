@@ -1,4 +1,5 @@
-
+#Name: Kelsey Nock
+#Class : Friday 15:00 
 def real_estate():
     
     current_price = int(input())

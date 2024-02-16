@@ -1,4 +1,5 @@
-
+#Name: Kelsey Nock
+#Class : Friday 15:00 
 def simple_stats():
     num1 = float(input())
     num2 = float(input())
